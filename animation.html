@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 50px auto 0 50px;
+             border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            background-image: repeating-conic-gradient(black 10%,white 15%);
+            animation: anime;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+      @keyframes anime{
+        0%{
+            transform: rotate(180deg);
+            animation-timing-function: ease-in;
+        }
+    30%{
+        transform: scale(2);
+    }
+60%{
+  transform: translateY(50px);
+}
+80%{
+    transform: rotate(-90deg);
+}
+      }
+
+    @media screen and (max-width:400px) {
+        div{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div>
+<!-- <img src="/OIP.jpeg" alt=""> -->
+    </div>
+</body>
+</html>
